@@ -41,6 +41,11 @@ public class Util {
     public static String getProp (String key) {
        return (String) getJsonObj(PROP_PATH).get(key);
     }
+
+    public static int wordCounter (String s1, String s2) {
+        return s1.split(s2).length - 1;
+
+    }
 }
 
 
