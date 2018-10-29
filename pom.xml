@@ -8,6 +8,10 @@
     <artifactId>task2-1</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!--<properties>-->
+        <!--<myVariable>${env.PARAM}</myVariable>-->
+    <!--</properties>-->
+
     <dependencies>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>

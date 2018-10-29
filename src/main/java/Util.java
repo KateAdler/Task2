@@ -5,6 +5,9 @@ import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 
 
 public class Util {
@@ -43,8 +46,16 @@ public class Util {
     }
 
     public static int wordCounter (String s1, String s2) {
-        return s1.split(s2).length - 1;
+        int count = 0;
+        Matcher matcher = Pattern.compile(s2.toLowerCase()).matcher(s1.toLowerCase());
+        while (matcher.find()) {
+            count++;
+        }
+        return count;
+    }
 
+    public static int punctuationCount (String s) {
+        return wordCounter(s, getProp("punctuationMarks"));
     }
 }
 

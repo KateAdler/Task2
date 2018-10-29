@@ -1,4 +1,8 @@
 {
   "str1": "This method works",
-  "str2": "method"
+  "str2": "method",
+  "str3": "Wormholes are consistent with the general theory of relativity, but whether wormholes actually exist remains to be seen.",
+  "word": "wormholes",
+  "str4": "Wormholes are consistent seen?",
+  "punctuationMarks": "[!.,;:?\\-]"
 }
